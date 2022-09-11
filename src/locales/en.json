@@ -1,0 +1,72 @@
+{
+    "addCard": "To file new report",
+    "prevCard": "View your previous report",
+    "clickBtn": "Click here",
+    
+    "formText1": "Welcome to uncover complaint form.",
+    "formText2": "You report will remain anonymus",
+    "formText3": "and help us to make our service better.",
+    "formDep": "Choose department",
+    "formTitle": "Title",
+    "formDesc": "Description",
+    "formAttach": "Attached file",
+    "submit": "Submit",
+    
+    "reportNum": "Enter report number",
+    "contin": "Continue",
+    "back": "Go back",
+    
+    "number": "Report number",
+    "repText": "You can view report status and add new information",
+    "repHeaderTitle": "Original report",
+    "repDep": "Department",
+    "yMessage": "Your message",
+    "addMessage": "Add another message",
+
+    "success": "Your report submitted successfully",
+    "secureNum": "Here your secure report number, you can view your report status in the same link using the report number.",
+
+
+    "login": "Login",
+    "forgotPass": "Forgot password",
+    "incorect": "Password or email are incorect or does not match. please try again.",
+    "emailL": "Email",
+    "passwordL": "Password",
+
+    "list": "Report list",
+    "sortB": "Sort by",
+    "filterB": "Filter by",
+    "openD": "Open date",
+    "expD": "Expiration date",
+    "lastU": "Last update",
+    "all": "All",
+    "newR": "New",
+    "open": "Open",
+    "closed": "Closed",
+    "expired": "Expired",
+    "flagged": "Flagged",
+    "unfl": "Unflagged",
+    "unread": "Unread",
+    "comm": "Comments",
+    "eDate": "Exp. date",
+    "openB": "Open",
+    "closedB": "Closed",
+    "expiredB": "Expired",
+    "lUpdt": "Last update",
+
+    "status": "Status",
+    "flag": "Flag",
+    "download": "Download",
+    "printR": "Print",
+    "userList": "User access list",
+    "addRemove": "Add or remove users",
+    "clientMsg": "Client message",
+    "repetRep": "Repit to report",
+    "uncCust": "Uncover cursomer relations",
+
+    "myAcc": "My Account",
+    "userMng": "User management",
+    "menuDep": "Departments",
+    "logO": "Log Out"
+
+  }

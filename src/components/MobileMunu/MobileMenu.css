@@ -1,0 +1,17 @@
+.menu_mob {
+  display: block;
+}
+
+.item_mob {
+  margin-top: 40px;
+}
+
+.burger {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 767.5px) {
+  .mob_box {
+    display: none;
+  }
+}
