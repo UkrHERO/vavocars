@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vavocars/static/css/main.b7682350.css",
-    "main.js": "/vavocars/static/js/main.eeb067d7.js",
+    "main.css": "/vavocars/static/css/main.a05686ce.css",
+    "main.js": "/vavocars/static/js/main.13c3523d.js",
     "static/media/background_banner.jpg": "/vavocars/static/media/background_banner.749035e0eeb27a3b71b8.jpg",
     "static/media/02.jpg": "/vavocars/static/media/02.47cc4f84005896d1b4f6.jpg",
     "static/media/car3.jpg": "/vavocars/static/media/car3.78cab23aae2d83cb16f4.jpg",
@@ -28,16 +28,16 @@
     "static/media/instagram.svg": "/vavocars/static/media/instagram.21ef3230a75650cdbb78b7dbf773a4aa.svg",
     "static/media/check.svg": "/vavocars/static/media/check.d665550c11de878073ff.svg",
     "static/media/up.svg": "/vavocars/static/media/up.964072de2910746c5de6a273fae37673.svg",
-    "static/media/user.svg": "/vavocars/static/media/user.a09ce2838f700ed6682a788f187369a2.svg",
     "index.html": "/vavocars/index.html",
+    "static/media/user.svg": "/vavocars/static/media/user.a09ce2838f700ed6682a788f187369a2.svg",
     "static/media/whatsapp.svg": "/vavocars/static/media/whatsapp.8121c3143f4e280881f1b08c981e04da.svg",
     "static/media/telegram.svg": "/vavocars/static/media/telegram.da27cc0037e7ae9c6dfe0dd57a4526c5.svg",
     "static/media/burger.svg": "/vavocars/static/media/burger.db130682883a5925afbc1803421eff93.svg",
-    "main.b7682350.css.map": "/vavocars/static/css/main.b7682350.css.map",
-    "main.eeb067d7.js.map": "/vavocars/static/js/main.eeb067d7.js.map"
+    "main.a05686ce.css.map": "/vavocars/static/css/main.a05686ce.css.map",
+    "main.13c3523d.js.map": "/vavocars/static/js/main.13c3523d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7682350.css",
-    "static/js/main.eeb067d7.js"
+    "static/css/main.a05686ce.css",
+    "static/js/main.13c3523d.js"
   ]
 }
