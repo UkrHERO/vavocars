@@ -1,4 +1,6 @@
 import { useState } from "react";
+import withLocalization from "../../components/hocLang/withLocalization";
+
 import Container from "../../components/Container/Container";
 import ModalBox from "../../components/modal/Modal";
 import ModalBoxImage from "../../components/modalImage/Modal";
@@ -33,7 +35,27 @@ import car6_5 from "../../images/car6/05.jpg";
 
 import "./Price.css";
 
-function Price() {
+function Price({ localization }) {
+  const {
+    cars,
+    review,
+    classL,
+    color,
+    white,
+    grey,
+    silver,
+    capacity,
+    seats,
+    interior,
+    leather,
+    from,
+    book_now,
+    sedan,
+    cabriolet,
+    blue,
+    black,
+  } = localization.localizedContent;
+
   const arrPhotos = {
     car_1: [car1, car1_2, car1_3, car1_4, car1_5],
     car_2: [car2, car2_2, car2_3, car2_4, car2_5],
@@ -49,7 +71,7 @@ function Price() {
   return (
     <section id="cars" className="services_sec">
       <Container>
-        <h2 className="service_title">CARS</h2>
+        <h2 className="service_title">{cars}</h2>
         <div className="line"></div>
 
         <div className="cars_box">
@@ -66,7 +88,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -74,14 +96,20 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">Range Rover 2016</p>
               <div className="details_box">
-                <p className="car_detail">Class: Premium SUV</p>
-                <p className="car_detail">Color: White</p>
-                <p className="car_detail">Capacity: 5 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">{classL}: Premium SUV</p>
+                <p className="car_detail">
+                  {color}: {black}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 5 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -90,7 +118,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -108,7 +136,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -121,14 +149,20 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">volkswagen touareg</p>
               <div className="details_box">
-                <p className="car_detail">Class: SUV</p>
-                <p className="car_detail">Color: Grey</p>
-                <p className="car_detail">Capacity: 5 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">{classL}: SUV</p>
+                <p className="car_detail">
+                  {color}: {grey}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 5 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -137,7 +171,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -155,7 +189,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -168,14 +202,20 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">mazda cx-9 2018</p>
               <div className="details_box">
-                <p className="car_detail">Class: SUV</p>
-                <p className="car_detail">Color: Grey</p>
-                <p className="car_detail">Capacity: 5 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">{classL}: SUV</p>
+                <p className="car_detail">
+                  {color}: {grey}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 5 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -184,7 +224,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -202,7 +242,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -215,14 +255,22 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">Audi A5 2011</p>
               <div className="details_box">
-                <p className="car_detail">Class: Cabriolet</p>
-                <p className="car_detail">Color: Blue</p>
-                <p className="car_detail">Capacity: 4 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">
+                  {classL}: {cabriolet}
+                </p>
+                <p className="car_detail">
+                  {color}: {blue}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 4 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -231,7 +279,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -249,7 +297,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -262,14 +310,20 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">volkswagen touareg</p>
               <div className="details_box">
-                <p className="car_detail">Class: SUV</p>
-                <p className="car_detail">Color: White</p>
-                <p className="car_detail">Capacity: 5 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">{classL}: SUV</p>
+                <p className="car_detail">
+                  {color}: {white}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 5 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -278,7 +332,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -296,7 +350,7 @@ function Price() {
                       setModalShowImg(true);
                     }}
                   >
-                    REVIEW
+                    {review}
                   </button>
                 </div>
               </div>
@@ -309,14 +363,22 @@ function Price() {
             <div className="card_bottom">
               <p className="car_title">kia optima ex 2013</p>
               <div className="details_box">
-                <p className="car_detail">Class: Sedan</p>
-                <p className="car_detail">Color: Silver</p>
-                <p className="car_detail">Capacity: 5 seats</p>
-                <p className="car_detail">Interior: Leather</p>
+                <p className="car_detail">
+                  {classL}: {sedan}
+                </p>
+                <p className="car_detail">
+                  {color}: {silver}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 5 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
               </div>
               <div className="btn_box">
                 <div className="price_box">
-                  <p className="car_detail">From:</p>
+                  <p className="car_detail">{from}:</p>
                   <p className="car_price">$80</p>
                 </div>
 
@@ -325,7 +387,7 @@ function Price() {
                   className="main_button_book"
                   onClick={() => setModalShow(true)}
                 >
-                  Book now
+                  {book_now}
                 </button>
               </div>
             </div>
@@ -342,5 +404,4 @@ function Price() {
     </section>
   );
 }
-
-export default Price;
+export default withLocalization(Price);

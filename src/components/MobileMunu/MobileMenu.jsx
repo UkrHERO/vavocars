@@ -7,7 +7,9 @@ import { ReactComponent as Burger } from "../../images/burger.svg";
 import "./MobileMenu.css";
 
 function MobileMenu({ localization }) {
-  const { currentLocale, locales, changeLocale } = localization;
+  const { advantages, cars, about_us, contacts } =
+    localization.localizedContent;
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -27,23 +29,23 @@ function MobileMenu({ localization }) {
           <ul className="menu_mob">
             <li className="item_mob" onClick={handleClose}>
               <a className="menu_item" href="#advantages">
-                ADVANTAGES
+                {advantages}
               </a>
             </li>
             <li className="item_mob" onClick={handleClose}>
               {" "}
               <a className="menu_item" href="#cars">
-                CARS
+                {cars}
               </a>
             </li>
             <li className="item_mob" onClick={handleClose}>
               <a className="menu_item" href="#aboutus">
-                ABOUT US
+                {about_us}
               </a>
             </li>
             <li className="item_mob" onClick={handleClose}>
               <a className="menu_item" href="#contacts">
-                CONTACTS
+                {contacts}
               </a>
             </li>
           </ul>

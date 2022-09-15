@@ -1,70 +1,69 @@
 import Container from "../../components/Container/Container";
+import withLocalization from "../../components/hocLang/withLocalization";
 
-// import { ReactComponent as Check } from "../../images/check.svg";
-import { ReactComponent as Facebook } from "../../images/facebook2.svg";
-import { ReactComponent as Instagram } from "../../images/instagram.svg";
 import { ReactComponent as Telegram } from "../../images/social/telegram.svg";
 import { ReactComponent as Viber } from "../../images/social/viber.svg";
 import { ReactComponent as Whatsapp } from "../../images/social/whatsapp.svg";
 
 import "./Footer.css";
 
-function Footer() {
+function Footer({ localization }) {
+  const {
+    advantages,
+    about_us,
+    about_text,
+    messengers,
+    great_range,
+    perf_cond,
+    ind_approach,
+    reas_prisec,
+  } = localization.localizedContent;
+
   return (
     <section className="service_sec">
       <Container>
         <div className="footer_box">
           <div className="footer_item">
-            <p className="footer_title">About us</p>
+            <p className="footer_title">{about_us}</p>
             <div className="footer_line"></div>
-            <p className="footer_text">
-              Located in Beautiful Florida's Riviera Sunny Isles Beach & Fort
-              Lauderdale Beach, VIP Miami Auto specializes in providing you with
-              any car or yacht rental for any occasion. We offer a wide variety
-              of cars ranging from Luxury Cars to Super Cars! We can arrange for
-              the vehicle to be delivered/picked-up directly to your home,
-              hotel, airport, or current location within Miami and Broward.
-            </p>
+            <p className="footer_text">{about_text}</p>
           </div>
           <div className="footer_item">
-            <p className="footer_title">Advantages</p>
+            <p className="footer_title">{advantages}</p>
             <div className="footer_line"></div>
             <ul className="footer_ul">
               <li className="footer_li">
-                <p className="footer_text">Great range of cars</p>
+                <p className="footer_text">{great_range}</p>
               </li>
               <li className="footer_li">
-                <p className="footer_text">The perfect condition of cars</p>
+                <p className="footer_text">{perf_cond}</p>
               </li>
               <li className="footer_li">
-                <p className="footer_text">Individual approach to the client</p>
+                <p className="footer_text">{ind_approach}</p>
               </li>
               <li className="footer_li">
-                <p className="footer_text">Reasonable prices</p>
+                <p className="footer_text">{reas_prisec}</p>
               </li>
             </ul>
           </div>
           <div className="footer_item">
-            <p className="footer_title">Messengers</p>
+            <p className="footer_title">{messengers}</p>
             <div className="footer_line"></div>
             <div className="footer_mes">
-              <Telegram className="social_item" />
-              <Whatsapp className="social_item" />
-              <Viber className="social_item" />
+              <a href="https://t.me/miamicarrent">
+                <Telegram className="social_item" />
+              </a>
+              <a href="https://wa.me/19145223334">
+                <Whatsapp className="social_item" />
+              </a>
+              <a href="viber://add?number=19145223334">
+                <Viber className="social_item" />
+              </a>
             </div>
-            {/* <div className="footer_social">
-              <a className="footer_link" href="https://www.facebook.com/">
-                <Facebook className="footer_icon" />
-              </a>
-              <a className="footer_link" href="https://www.facebook.com/">
-                <Instagram className="footer_icon" />
-              </a>
-            </div> */}
           </div>
         </div>
       </Container>
     </section>
   );
 }
-
-export default Footer;
+export default withLocalization(Footer);

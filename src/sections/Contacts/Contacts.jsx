@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
+import withLocalization from "../../components/hocLang/withLocalization";
+
 import Container from "../../components/Container/Container";
 import { ReactComponent as Phone } from "../../images/phone.svg";
 import { ReactComponent as Mail } from "../../images/mail.svg";
@@ -10,7 +12,10 @@ import keys from "../../images/keys.png";
 
 import "./Contacts.css";
 
-function Contacts() {
+function Contacts({ localization }) {
+  const { contacts, contact_form, nameL, phone_email, messageL, send } =
+    localization.localizedContent;
+
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [massege, setMassege] = useState("");
@@ -39,7 +44,7 @@ function Contacts() {
   return (
     <section id="contacts" className="services_sec">
       <Container>
-        <h2 className="service_title">CONTACTS</h2>
+        <h2 className="service_title">{contacts}</h2>
         <div className="line"></div>
         <div className="service_box">
           <div className="contact_box">
@@ -59,18 +64,24 @@ function Contacts() {
               </a>
             </div>
             <div className="contact_socials">
-              <Telegram className="social_item" />
-              <Whatsapp className="social_item" />
-              <Viber className="social_item" />
+              <a href="https://t.me/miamicarrent">
+                <Telegram className="social_item" />
+              </a>
+              <a href="https://wa.me/19145223334">
+                <Whatsapp className="social_item" />
+              </a>
+              <a href="viber://add?number=19145223334">
+                <Viber className="social_item" />
+              </a>
             </div>
             <img className="keys_img" src={keys} alt="keys" />
           </div>
           <form className="form" ref={form} onSubmit={sendEmail}>
-            <p className="contact_form">Contact form</p>
+            <p className="contact_form">{contact_form}</p>
             {/* <label className="form_label">Name</label> */}
             <input
               className="form_input"
-              placeholder="Name"
+              placeholder={nameL}
               type="text"
               name="from_name"
               value={name}
@@ -80,7 +91,7 @@ function Contacts() {
             <input
               onChange={(text) => setTel(text.target.value)}
               className="form_input"
-              placeholder="Phone or Email"
+              placeholder={phone_email}
               type="tel"
               name="email"
               value={tel}
@@ -94,17 +105,16 @@ function Contacts() {
             /> */}
             <textarea
               className="form_input form_mass"
-              placeholder="Message"
+              placeholder={messageL}
               name="message"
               value={massege}
               onChange={(text) => setMassege(text.target.value)}
             />
-            <input className="form_btn" type="submit" value="SEND" />
+            <input className="form_btn" type="submit" value={send} />
           </form>
         </div>
       </Container>
     </section>
   );
 }
-
-export default Contacts;
+export default withLocalization(Contacts);

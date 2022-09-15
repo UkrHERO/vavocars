@@ -1,9 +1,13 @@
 import MobileMenu from "../../components/MobileMunu/MobileMenu";
 import logo from "../../images/logo2.png";
+import withLocalization from "../../components/hocLang/withLocalization";
 
 import "./Header.css";
 
-function Header() {
+function Header({ localization }) {
+  const { advantages, cars, about_us, contacts } =
+    localization.localizedContent;
+
   return (
     <div className="header_cont">
       <img className="logo" src={logo} alt="logo" className="logo"></img>
@@ -11,27 +15,26 @@ function Header() {
       <ul className="menu">
         <li>
           <a className="menu_item" href="#advantages">
-            ADVANTAGES
+            {advantages}
           </a>
         </li>
         <li>
           <a className="menu_item" href="#cars">
-            CARS
+            {cars}
           </a>
         </li>
         <li>
           <a className="menu_item" href="#aboutus">
-            ABOUT US
+            {about_us}
           </a>
         </li>
         <li>
           <a className="menu_item" href="#contacts">
-            CONTACTS
+            {contacts}
           </a>
         </li>
       </ul>
     </div>
   );
 }
-
-export default Header;
+export default withLocalization(Header);

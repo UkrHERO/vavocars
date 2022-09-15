@@ -1,10 +1,14 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
+import withLocalization from "../hocLang/withLocalization";
+
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 
 function ModalBox(props) {
+  const { book_now, nameL, phone_email, messageL, send } =
+    props.localization.localizedContent;
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [massege, setMassege] = useState("");
@@ -44,7 +48,7 @@ function ModalBox(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Book now</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">{book_now}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <form className="form2" ref={form} onSubmit={sendEmail}>
@@ -52,7 +56,7 @@ function ModalBox(props) {
           {/* <label className="form_label">Name</label> */}
           <input
             className="form_input"
-            placeholder="Name"
+            placeholder={nameL}
             type="text"
             name="from_name"
             value={name}
@@ -62,7 +66,7 @@ function ModalBox(props) {
           <input
             onChange={(text) => setTel(text.target.value)}
             className="form_input"
-            placeholder="Phone or Email"
+            placeholder={phone_email}
             type="text"
             name="email"
             value={tel}
@@ -85,12 +89,12 @@ function ModalBox(props) {
           />
           <textarea
             className="form_input form_mass"
-            placeholder="Message"
+            placeholder={messageL}
             name="message"
             value={massege}
             onChange={(text) => setMassege(text.target.value)}
           />
-          <input className="form_btn" type="submit" value="SEND" />
+          <input className="form_btn" type="submit" value={send} />
         </form>
       </Modal.Body>
       {/* <Modal.Footer>
@@ -99,5 +103,4 @@ function ModalBox(props) {
     </Modal>
   );
 }
-
-export default ModalBox;
+export default withLocalization(ModalBox);

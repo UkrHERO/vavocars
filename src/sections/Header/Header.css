@@ -34,6 +34,7 @@
   padding: 5px 0;
   margin-right: 25px;
   position: relative;
+  text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
