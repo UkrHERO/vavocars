@@ -110,7 +110,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$89</p>
                 </div>
 
                 <button
@@ -163,7 +163,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$35</p>
                 </div>
 
                 <button
@@ -216,7 +216,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$45</p>
                 </div>
 
                 <button
@@ -271,7 +271,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$39</p>
                 </div>
 
                 <button
@@ -324,7 +324,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$35</p>
                 </div>
 
                 <button
@@ -379,7 +379,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$80</p>
+                  <p className="car_price">$25</p>
                 </div>
 
                 <button
