@@ -1,18 +1,27 @@
 {
   "files": {
     "main.css": "/static/css/main.8d0af51e.css",
-    "main.js": "/static/js/main.f2c93646.js",
+    "main.js": "/static/js/main.37a22df5.js",
     "static/media/background_banner.jpg": "/static/media/background_banner.749035e0eeb27a3b71b8.jpg",
+    "static/media/x3.jpg": "/static/media/x3.43c1948202a2c8562cda.jpg",
+    "static/media/x5.jpg": "/static/media/x5.0cbe8b845e5ee7ffbf1f.jpg",
+    "static/media/x4.jpg": "/static/media/x4.3a40dbb1a188814fb113.jpg",
     "static/media/02.jpg": "/static/media/02.47cc4f84005896d1b4f6.jpg",
     "static/media/car3.jpg": "/static/media/car3.78cab23aae2d83cb16f4.jpg",
     "static/media/car7.jpg": "/static/media/car7.d566ddf75ce8a13ece8f.jpg",
     "static/media/03.jpg": "/static/media/03.1945c9c6e5ae7063ca11.jpg",
     "static/media/04.jpg": "/static/media/04.a1ea3ae5650a5602d480.jpg",
+    "static/media/x1.jpg": "/static/media/x1.25f27203d0aaaf8c6142.jpg",
+    "static/media/x2.jpg": "/static/media/x2.d7b110513729b2d4765b.jpg",
     "static/media/car2.jpg": "/static/media/car2.ba65c594ff7c7be927a4.jpg",
     "static/media/car5.jpg": "/static/media/car5.1ca3402870f1cd0d0902.jpg",
+    "static/media/x6.jpg": "/static/media/x6.67d7421b53693aaa7626.jpg",
+    "static/media/x7.jpg": "/static/media/x7.676b0e5178816d7856a7.jpg",
     "static/media/car6.jpg": "/static/media/car6.6d8e1c8f81e38f70b363.jpg",
     "static/media/car.jpg": "/static/media/car.60e187400f6619923b8d.jpg",
     "static/media/05.jpg": "/static/media/05.d98a8c6a9f3468dfb8db.jpg",
+    "static/media/x8.jpg": "/static/media/x8.2f9626562b6a6708d12f.jpg",
+    "static/media/x9.jpg": "/static/media/x9.5eb16201617734f21075.jpg",
     "static/media/keys.png": "/static/media/keys.4d4cea88b747bea46be4.png",
     "static/media/card.svg": "/static/media/card.17c35e6028089bcd2d6b0654ae08320b.svg",
     "static/media/viber.svg": "/static/media/viber.5e456d9bbf365e6f50c0416e4d452b77.svg",
@@ -34,10 +43,10 @@
     "static/media/telegram.svg": "/static/media/telegram.da27cc0037e7ae9c6dfe0dd57a4526c5.svg",
     "static/media/burger.svg": "/static/media/burger.db130682883a5925afbc1803421eff93.svg",
     "main.8d0af51e.css.map": "/static/css/main.8d0af51e.css.map",
-    "main.f2c93646.js.map": "/static/js/main.f2c93646.js.map"
+    "main.37a22df5.js.map": "/static/js/main.37a22df5.js.map"
   },
   "entrypoints": [
     "static/css/main.8d0af51e.css",
-    "static/js/main.f2c93646.js"
+    "static/js/main.37a22df5.js"
   ]
 }
