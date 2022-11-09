@@ -26,14 +26,14 @@ function Contacts({ localization }) {
 
     emailjs
       .send(
-        "service_ivqo7z7",
-        "template_tjp14d3",
+        "service_15d2gt4",
+        "template_10nz3l3",
         {
           from_name: name,
           to_name: tel,
           message: massege,
         },
-        "Qx6gI8OHQrv8NEFNP"
+        "63VrFfhUKEko2T_jp"
       )
       .then((res) => console.log(res))
       .catch((err) => console.log(err));

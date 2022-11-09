@@ -32,6 +32,15 @@ import car6_2 from "../../images/car6/02.jpg";
 import car6_3 from "../../images/car6/03.jpg";
 import car6_4 from "../../images/car6/04.jpg";
 import car6_5 from "../../images/car6/05.jpg";
+import car7 from "../../images/car7/x1.jpg";
+import car7_2 from "../../images/car7/x2.jpg";
+import car7_3 from "../../images/car7/x3.jpg";
+import car7_4 from "../../images/car7/x4.jpg";
+import car7_5 from "../../images/car7/x5.jpg";
+import car7_6 from "../../images/car7/x6.jpg";
+import car7_7 from "../../images/car7/x7.jpg";
+import car7_8 from "../../images/car7/x8.jpg";
+import car7_9 from "../../images/car7/x9.jpg";
 
 import "./Price.css";
 
@@ -63,6 +72,17 @@ function Price({ localization }) {
     car_4: [car4, car4_2, car4_3, car4_4, car4_5],
     car_5: [car5, car5_2, car5_3, car5_4],
     car_6: [car6, car6_2, car6_3, car6_4, car6_5],
+    car_7: [
+      car7,
+      car7_2,
+      car7_3,
+      car7_4,
+      car7_5,
+      car7_6,
+      car7_7,
+      car7_8,
+      car7_9,
+    ],
   };
 
   const [modalShow, setModalShow] = useState(false);
@@ -75,6 +95,54 @@ function Price({ localization }) {
         <div className="line"></div>
 
         <div className="cars_box">
+          <div className="car_card">
+            <div className="card_top">
+              <img className="car_img" src={car7} alt="car" />
+              <div className="pr_box">
+                <div className="project_btn">
+                  <button
+                    type="button"
+                    className="pr_btn"
+                    onClick={() => {
+                      setImages(arrPhotos.car_7);
+                      setModalShowImg(true);
+                    }}
+                  >
+                    {review}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="card_bottom">
+              <p className="car_title">BMW X7 M60i 2023</p>
+              <div className="details_box">
+                <p className="car_detail">{classL}: Premium SUV</p>
+                <p className="car_detail">
+                  {color}: {white}
+                </p>
+                <p className="car_detail">
+                  {capacity}: 7 {seats}
+                </p>
+                <p className="car_detail">
+                  {interior}: {leather}
+                </p>
+              </div>
+              <div className="btn_box">
+                <div className="price_box">
+                  <p className="car_detail">{from}:</p>
+                  <p className="car_price">$180</p>
+                </div>
+
+                <button
+                  type="button"
+                  className="main_button_book"
+                  onClick={() => setModalShow(true)}
+                >
+                  {book_now}
+                </button>
+              </div>
+            </div>
+          </div>
           <div className="car_card">
             <div className="card_top">
               <img className="car_img" src={car1} alt="car" />
@@ -207,7 +275,7 @@ function Price({ localization }) {
                   {color}: {grey}
                 </p>
                 <p className="car_detail">
-                  {capacity}: 5 {seats}
+                  {capacity}: 7 {seats}
                 </p>
                 <p className="car_detail">
                   {interior}: {leather}
@@ -379,7 +447,7 @@ function Price({ localization }) {
               <div className="btn_box">
                 <div className="price_box">
                   <p className="car_detail">{from}:</p>
-                  <p className="car_price">$25</p>
+                  <p className="car_price">$29</p>
                 </div>
 
                 <button
